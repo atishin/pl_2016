@@ -1,13 +1,12 @@
 #include <iostream>
-
 using namespace std;
 
-int a[100];
-int n;
+int n, k, a[10];
 
 void print() {
 	for (int i = 0; i < n; i ++) {
-		cout << a[i];
+		if (a[i] < 10) cout << a[i];
+		else cout << (char)(a[i] + 'a' - 10);
 	}
 	cout << "\n";
 }
@@ -17,15 +16,13 @@ void rec(int x) {
 		print();
 		return;
 	}
-	a[x] = 0;
-	rec(x + 1);
-	a[x] = 1;
-	rec(x + 1);
-	a[x] = 2;
-	rec(x + 1);		
+	for (int i = 0; i < k; i ++) {
+		a[x] = i;
+		rec(x + 1);
+	}
 }
 
 int main() {
-	cin >> n;
+	cin >> n >> k;
 	rec(0);
 }
