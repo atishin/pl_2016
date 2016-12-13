@@ -8,3 +8,4 @@
 
 В четверг в 12:00 жду вас в кабинете **366**
 
+https://1drv.ms/x/s!AgawRcQo_GyPgZd9uuVvBWUUZdqzkw ссылка на результаты файнала
